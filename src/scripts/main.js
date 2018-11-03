@@ -13,7 +13,8 @@ function lego() {
     color: color
   }
 
-  console.log(savedLego)
+  console.table(savedLego)
+  
 
   fetch("http://localhost:8088/legos", {
     method: "POST",
@@ -22,7 +23,7 @@ function lego() {
     },
     body: JSON.stringify(savedLego)
   })
-
+  
 }
 
 document.querySelector(".lego_display").addEventListener("click", displayLego)
