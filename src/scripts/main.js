@@ -1,9 +1,5 @@
 document.querySelector(".lego_save").addEventListener("click", lego)
 
-// const legoResults = document.getElementById("legoOutput")
-
-
-
 function lego() {
   let creator = document.getElementById("lego_creator").value
   let creation = document.getElementById("lego_creation_label").value
@@ -26,6 +22,7 @@ function lego() {
     },
     body: JSON.stringify(savedLego)
   })
+
 }
 
 document.querySelector(".lego_display").addEventListener("click", displayLego)
