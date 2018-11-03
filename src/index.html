@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/main.css">
   <title>User Input</title>
 </head>
+
 <body>
   <h1>User Input</h1>
+
+  <fieldset>
+    <section id="creator_box">
+      <label for="lego_creator">Creator:</label>
+      <input id="lego_creator" name="creator" type="text" autofocus placeholder="What's your name?" />
+    </section>
+
+    <section id="creation_box">
+      <label for="lego_creation_label">Creation:</label>
+      <input id="lego_creation_label" name="creation" type="text" autofocus placeholder="Name your creation" />
+    </section>
+
+    <section id="shape_box">
+      <label for="lego_shape_label">Shape:</label>
+      <input id="lego_shape_label" name="lego_shape" type="text" autofocus placeholder="Tell us about the shape" />
+    </section>
+
+    <section id="color_dropdown">
+      <label for="lego_color_dropdown">Select Color:</label>
+      <select id="lego_color_dropdown">
+        <option value="Red">Red</option>
+        <option value="Green">Green</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Blue">Blue</option>
+        <option value="Orange">Orange</option>
+        <option value="Black">Black</option>
+      </select>
+    </section>
+
+  </fieldset>
+  <button class="lego_save">Save Lego Creation</button>
+  <button class="lego_display">Display Lego Creation</button>
+
+  <section id="legoOutput">
+
+  </section>
+
+  <script src="scripts/main.js"></script>
 </body>
+
 </html>
